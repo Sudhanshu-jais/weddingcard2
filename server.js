@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 const HOST = '0.0.0.0';
 
 // Serve static assets and files from root
-app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Serve index.html for any route fallback
 app.get('*', (req, res) => {
