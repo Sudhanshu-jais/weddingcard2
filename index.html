@@ -70,10 +70,13 @@
       max-width: 100%;
     }
 
+<<<<<<< HEAD
     section[id] {
       scroll-margin-top: 80px;
     }
 
+=======
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
     body {
       background-color: var(--cream-bg);
       color: var(--ink);
@@ -206,6 +209,7 @@
       gap: 10px;
     }
 
+<<<<<<< HEAD
     /* Music Player Button (Playing User Uploaded MP3) */
     .music-toggle-btn {
       height: 38px;
@@ -265,6 +269,33 @@
       border-color: var(--gold-bright);
       box-shadow: 0 0 16px var(--gold-glow);
       color: var(--gold-light);
+=======
+    /* Music Player Button */
+    .music-toggle-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: rgba(255, 248, 238, 0.18);
+      border: 1px solid rgba(243, 222, 178, 0.45);
+      color: #FFF3E0;
+      display: grid;
+      place-items: center;
+      font-size: 16px;
+      backdrop-filter: blur(6px);
+      transition: all 0.3s ease;
+    }
+
+    .music-toggle-btn:hover {
+      background: rgba(255, 248, 238, 0.32);
+      border-color: var(--gold-light);
+      transform: scale(1.06);
+    }
+
+    .music-toggle-btn.playing {
+      background: var(--maroon);
+      border-color: var(--gold-light);
+      box-shadow: 0 0 16px var(--gold-glow);
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       animation: gentlePulse 2s infinite ease-in-out;
     }
 
@@ -285,15 +316,25 @@
        Hero Section (Matching Mockup with Panoramic Palace & Lake)
        ------------------------------------------------------------- */
     .hero-section {
+<<<<<<< HEAD
       min-height: 100svh;
       min-height: 100vh;
       height: auto;
+=======
+      min-height: 580px;
+      height: 88vh;
+      max-height: 740px;
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
+<<<<<<< HEAD
       padding: clamp(80px, 12vh, 110px) 16px clamp(40px, 6vh, 60px);
+=======
+      padding: 85px 18px 40px;
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       background-image: url('assets/hero-scenic.jpg');
       background-position: center 38%;
       background-size: cover;
@@ -354,13 +395,20 @@
     }
 
     .hero-names {
+<<<<<<< HEAD
       font-size: clamp(32px, 6.5vw, 66px);
+=======
+      font-size: clamp(38px, 6.6vw, 68px);
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       line-height: 1.22;
       color: var(--maroon);
       font-weight: 700;
       margin: 2px 0 10px;
       letter-spacing: 0.01em;
+<<<<<<< HEAD
       text-wrap: balance;
+=======
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       text-shadow: 0 2px 14px rgba(255, 255, 255, 0.95), 0 4px 25px rgba(255, 245, 225, 0.9);
     }
 
@@ -454,9 +502,14 @@
     }
 
     .countdown-grid {
+<<<<<<< HEAD
       display: flex;
       justify-content: center;
       align-items: center;
+=======
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       gap: clamp(8px, 2.5vw, 24px);
       max-width: 440px;
       width: 100%;
@@ -465,9 +518,16 @@
     }
 
     .count-circle {
+<<<<<<< HEAD
       width: clamp(66px, 20vw, 84px);
       height: clamp(66px, 20vw, 84px);
       aspect-ratio: 1 / 1;
+=======
+      width: 100%;
+      max-width: 82px;
+      aspect-ratio: 1 / 1;
+      height: auto;
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       border-radius: 50%;
       background: linear-gradient(145deg, #FFF9F2, #F4E7D7);
       border: 1px solid rgba(197, 157, 95, 0.45);
@@ -476,8 +536,13 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+<<<<<<< HEAD
       margin: 0;
       flex-shrink: 0;
+=======
+      margin: 0 auto;
+      min-width: 0;
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
@@ -624,7 +689,11 @@
     .events-header {
       text-align: center;
       max-width: 700px;
+<<<<<<< HEAD
       margin: 0 auto clamp(24px, 4vw, 36px);
+=======
+      margin: 0 auto clamp(24px, 4vw, 40px);
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
     }
 
     .events-main-title {
@@ -642,6 +711,7 @@
       font-weight: 400;
     }
 
+<<<<<<< HEAD
     /* -------------------------------------------------------------
        Grand Centerpiece: विवाह एवं आशीर्वाद समारोह (Featured Highlight)
        ------------------------------------------------------------- */
@@ -897,6 +967,21 @@
       border: 1px solid rgba(229, 194, 126, 0.45);
       border-radius: var(--radius-md);
       padding: clamp(18px, 2.2vw, 24px) clamp(12px, 1.8vw, 18px);
+=======
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: clamp(10px, 1.8vw, 18px);
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .event-card {
+      background: linear-gradient(165deg, rgba(255, 245, 230, 0.07) 0%, rgba(30, 6, 11, 0.45) 100%);
+      border: 1px solid rgba(229, 194, 126, 0.45);
+      border-radius: var(--radius-md);
+      padding: clamp(16px, 2vw, 24px) clamp(10px, 1.6vw, 18px);
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -907,6 +992,7 @@
     }
 
     .event-card:hover {
+<<<<<<< HEAD
       transform: translateY(-4px);
       border-color: var(--gold-bright);
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35), 0 0 18px rgba(197, 157, 95, 0.2);
@@ -916,6 +1002,17 @@
     .event-photo-wrapper {
       width: clamp(74px, 10vw, 88px);
       height: clamp(74px, 10vw, 88px);
+=======
+      transform: translateY(-5px);
+      border-color: var(--gold-bright);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35), 0 0 18px rgba(197, 157, 95, 0.2);
+      background: linear-gradient(165deg, rgba(255, 245, 230, 0.12) 0%, rgba(30, 6, 11, 0.55) 100%);
+    }
+
+    .event-photo-wrapper {
+      width: clamp(70px, 11vw, 88px);
+      height: clamp(70px, 11vw, 88px);
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       border-radius: 50%;
       padding: 3.5px;
       background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
@@ -938,7 +1035,11 @@
     }
 
     .event-date-badge {
+<<<<<<< HEAD
       font-size: 13px;
+=======
+      font-size: clamp(12px, 1.5vw, 13px);
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       color: var(--gold-light);
       font-weight: 500;
       line-height: 1.4;
@@ -946,7 +1047,11 @@
     }
 
     .event-title {
+<<<<<<< HEAD
       font-size: clamp(16px, 1.9vw, 19px);
+=======
+      font-size: clamp(15px, 1.9vw, 19px);
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       font-weight: 600;
       color: #FFF8EE;
       margin-bottom: 8px;
@@ -957,9 +1062,15 @@
       display: inline-flex;
       align-items: center;
       gap: 5px;
+<<<<<<< HEAD
       font-size: 12.5px;
       color: #F1D4B0;
       margin-bottom: 6px;
+=======
+      font-size: clamp(11.5px, 1.4vw, 13px);
+      color: #F1D4B0;
+      margin-bottom: 5px;
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
     }
 
     .event-time-badge svg {
@@ -969,30 +1080,56 @@
     }
 
     .event-location-text {
+<<<<<<< HEAD
       font-size: 12px;
       color: #D6B99A;
       margin-bottom: 14px;
+=======
+      font-size: clamp(11px, 1.3vw, 12px);
+      color: #D6B99A;
+      margin-bottom: 12px;
+    }
+
+    .event-divider-dash {
+      color: rgba(243, 222, 178, 0.4);
+      margin-bottom: 12px;
+      font-size: 14px;
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
     }
 
     .btn-cal {
       margin-top: auto;
       display: inline-flex;
       align-items: center;
+<<<<<<< HEAD
       gap: 6px;
       font-size: 11.5px;
       font-weight: 500;
       padding: 6px 14px;
+=======
+      gap: 5px;
+      font-size: 11px;
+      padding: 5px 12px;
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       border-radius: var(--radius-pill);
       color: var(--gold-light);
       background: rgba(255, 245, 230, 0.08);
       border: 1px solid rgba(229, 194, 126, 0.35);
       transition: all 0.25s ease;
+<<<<<<< HEAD
       min-height: 32px;
     }
 
     .btn-cal svg {
       width: 13px;
       height: 13px;
+=======
+    }
+
+    .btn-cal svg {
+      width: 12px;
+      height: 12px;
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       fill: currentColor;
     }
 
@@ -1326,6 +1463,25 @@
       fill: #FFF8EE;
     }
 
+<<<<<<< HEAD
+=======
+    .btn-whatsapp-share {
+      background: #25D366;
+      color: #FFFFFF;
+      border-color: #25D366;
+    }
+
+    .btn-whatsapp-share svg {
+      fill: #FFFFFF;
+    }
+
+    .btn-whatsapp-share:hover {
+      background: #1EBE5D;
+      border-color: #1EBE5D;
+      color: #FFFFFF;
+    }
+
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
     /* -------------------------------------------------------------
        Site Footer
        ------------------------------------------------------------- */
@@ -1541,6 +1697,7 @@
     }
 
     /* -------------------------------------------------------------
+<<<<<<< HEAD
        Responsive Breakpoints: Mobile First & Touch Ergonomics
        ------------------------------------------------------------- */
     @media (max-width: 900px) {
@@ -1566,15 +1723,30 @@
       }
       .pre-events-grid {
         grid-template-columns: repeat(3, 1fr);
+=======
+       Responsive Breakpoints: Mobile First
+       ------------------------------------------------------------- */
+    @media (max-width: 900px) {
+      .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
         gap: 12px;
       }
       .quicklinks-container {
         grid-template-columns: 1fr;
+<<<<<<< HEAD
         gap: 12px;
       }
       .venue-banner {
         justify-content: center;
         background-position: center;
+=======
+        gap: 10px;
+      }
+      .venue-banner {
+        justify-content: center;
+        background-position: center left;
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       }
       .venue-card-content {
         max-width: 100%;
@@ -1589,6 +1761,7 @@
       .nav-menu {
         display: none;
       }
+<<<<<<< HEAD
       .nav-actions {
         gap: 8px;
         flex-shrink: 0;
@@ -1641,10 +1814,29 @@
         max-height: none;
         padding-top: clamp(75px, 12vh, 100px);
         padding-bottom: clamp(40px, 8vh, 60px);
+=======
+      .hamburger-btn {
+        display: grid;
+      }
+      .mobile-bottom-dock {
+        display: flex;
+      }
+      
+      /* Mobile Hero Viewport Framing */
+      .hero-section {
+        background-image: url('assets/hero-mobile.jpg');
+        background-position: center top;
+        min-height: 540px;
+        height: 90svh;
+        max-height: 720px;
+        padding-top: 80px;
+        padding-bottom: 35px;
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       }
       .hero-section::after {
         background: radial-gradient(circle at 50% 48%, rgba(255, 248, 235, 0.42) 0%, rgba(255, 245, 225, 0.28) 45%, rgba(255, 240, 215, 0.12) 80%, rgba(45, 9, 14, 0.18) 100%);
       }
+<<<<<<< HEAD
       .hero-names {
         font-size: clamp(28px, 8vw, 44px);
         line-height: 1.25;
@@ -1733,10 +1925,16 @@
       .family-grid {
         grid-template-columns: 1fr;
         gap: 18px;
+=======
+      .family-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       }
       .family-grid::before {
         display: none;
       }
+<<<<<<< HEAD
 
       /* Venue Section Mobile */
       .venue-section {
@@ -1747,16 +1945,79 @@
       }
       .venue-card-content {
         padding: 20px 16px;
+=======
+      .site-footer {
+        padding-bottom: 85px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .countdown-section {
+        padding: 26px 8px 18px;
+      }
+      .countdown-grid {
+        gap: 6px;
+        max-width: 320px;
+        padding: 0 4px;
+      }
+      .count-circle {
+        max-width: 66px;
+      }
+      .count-number {
+        font-size: 19px;
+      }
+      .count-label {
+        font-size: 10px;
+      }
+      .contact-btn-group {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .btn-contact {
+        justify-content: center;
+      }
+      .events-section {
+        padding: 40px 10px;
+      }
+      .events-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+      }
+      .event-card {
+        padding: 12px 6px;
+        min-width: 0;
+      }
+      .event-photo-wrapper {
+        width: 62px;
+        height: 62px;
+      }
+      .event-title {
+        font-size: 14px;
+      }
+      .btn-cal {
+        font-size: 10px;
+        padding: 4px 7px;
+      }
+      .venue-section {
+        padding: 28px 10px;
+      }
+      .venue-banner {
+        padding: 20px 10px;
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       }
       .venue-actions {
         flex-direction: column;
         width: 100%;
+<<<<<<< HEAD
         gap: 8px;
+=======
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       }
       .btn-venue-map,
       .btn-venue-copy {
         width: 100%;
         justify-content: center;
+<<<<<<< HEAD
         min-height: 44px;
       }
 
@@ -1840,6 +2101,8 @@
       }
       .ritual-text {
         font-size: 12px;
+=======
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       }
     }
 
@@ -1879,10 +2142,16 @@
 
     <!-- Header Actions (Music & Mobile Menu) -->
     <div class="nav-actions">
+<<<<<<< HEAD
       <!-- Music Player Toggle Button (Plays User Uploaded MP3) -->
       <button class="music-toggle-btn" id="musicToggleBtn" aria-label="विवाह संगीत बजाएं या रोकें" title="विवाह संगीत बजाएं या रोकें">
         <span id="musicIcon">🎵</span>
         <span id="musicBtnLabel">संगीत</span>
+=======
+      <!-- Auspicious Wedding Instrumental / Shehnai Toggle -->
+      <button class="music-toggle-btn" id="musicToggleBtn" aria-label="मंगल ध्वनि बजाएं / रोकें" title="मंगल संगीत बजाएं">
+        <span id="musicIcon">🎵</span>
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       </button>
 
       <button class="hamburger-btn" id="hamburgerBtn" aria-label="मेन्यू खोलें" aria-expanded="false">
@@ -1891,12 +2160,15 @@
     </div>
   </header>
 
+<<<<<<< HEAD
   <!-- Background Wedding Music Audio Element (User Uploaded MP3 - Starts at 00:36) -->
   <audio id="weddingAudio" src="assets/wedding-music.mp3#t=36" preload="auto" loop playsinline style="display: none;">
     <source src="assets/wedding-music.mp3#t=36" type="audio/mpeg">
     <source src="assets/music.mp3#t=36" type="audio/mpeg">
   </audio>
 
+=======
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
   <!-- Mobile Navigation Drawer -->
   <div class="drawer-overlay" id="drawerOverlay"></div>
   <aside class="mobile-nav-drawer" id="mobileDrawer" aria-label="मोबाइल मेन्यू">
@@ -1914,11 +2186,19 @@
       <a href="#venue" class="drawer-link">विवाह स्थल <span>›</span></a>
       <a href="#family" class="drawer-link">परिवार <span>›</span></a>
       <a href="#contact" class="drawer-link">संपर्क करें <span>›</span></a>
+<<<<<<< HEAD
       <button class="drawer-link" id="drawerMusicBtn" style="background: none; border: none; width: 100%; cursor: pointer; text-align: left; color: var(--gold-light);">
         <span id="drawerMusicIcon">🎵</span>
         <span id="drawerMusicText" style="margin-left: 6px;">संगीत बजाएं</span>
         <span style="margin-left: auto;">›</span>
       </button>
+=======
+    </div>
+    <div style="margin-top: auto; padding-top: 20px;">
+      <a href="https://api.whatsapp.com/send?text=%E0%A4%95%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%BE%20%E0%A4%8F%E0%A4%B5%E0%A4%82%20%E0%A4%B9%E0%A4%BF%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%B6%E0%A5%80%20%E0%A4%95%E0%A5%87%20%E0%A4%B6%E0%A5%81%E0%A4%AD%20%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%B9%20%E0%A4%95%E0%A4%BE%20%E0%A4%A1%E0%A4%BF%E0%A4%9C%E0%A4%BF%E0%A4%9F%E0%A4%B2%20%E0%A4%A8%E0%A4%BF%E0%A4%AE%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%A3%3A%203%20%E0%A4%A6%E0%A4%BF%E0%A4%B8%E0%A4%82%E0%A4%AC%E0%A4%B0%202026%2C%20%E0%A4%87%E0%A4%82%E0%A4%A6%E0%A5%8C%E0%A4%B0" target="_blank" rel="noopener" class="btn-pill" style="width: 100%; font-size: 13.5px; padding: 11px;">
+        💬 WhatsApp पर शेयर करें
+      </a>
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
     </div>
   </aside>
 
@@ -2056,6 +2336,7 @@
          --------------------------------------------------------- -->
     <section class="events-section" id="events">
       <div class="events-header reveal">
+<<<<<<< HEAD
         <h2 class="events-main-title">— ❋ शुभ मांगलिक कार्यक्रम ❋ —</h2>
         <p class="events-subtitle">मंगल परिणय के समस्त मांगलिक प्रसंग एवं शुभ मुहूर्त</p>
       </div>
@@ -2215,6 +2496,90 @@
           </article>
 
         </div>
+=======
+        <h2 class="events-main-title">— ❋ शुभ कार्यक्रम ❋ —</h2>
+        <p class="events-subtitle">आपके आगमन से हमारा उत्साह और भी बढ़ेगा</p>
+      </div>
+
+      <div class="events-grid">
+        
+        <!-- Event 1: Ganesh Puja -->
+        <article class="event-card reveal">
+          <div class="event-photo-wrapper">
+            <img src="assets/event-1.jpg" alt="श्री गणेश एवं माता पूजन" loading="lazy">
+          </div>
+          <div class="event-date-badge">1 दिसंबर 2026<br>(मंगलवार)</div>
+          <h3 class="event-title">श्री गणेश एवं माता पूजन</h3>
+          <div class="event-time-badge">
+            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            <span>सुबह 10:00 बजे</span>
+          </div>
+          <div class="event-location-text">निज निवास, इंदौर</div>
+          <div class="event-divider-dash">--</div>
+          <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80+%E0%A4%97%E0%A4%A3%E0%A5%87%E0%A4%B6+%E0%A4%8F%E0%A4%B5%E0%A4%82+%E0%A4%AE%E0%A4%BE%E0%A4%A4%E0%A4%BE+%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%A8+-+%E0%A4%95%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%BE+%26+%E0%A4%B9%E0%A4%BF%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%B6%E0%A5%80&dates=20261201T043000Z/20261201T073000Z&details=%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80+%E0%A4%97%E0%A4%A3%E0%A5%87%E0%A4%B6+%E0%A4%8F%E0%A4%B5%E0%A4%82+%E0%A4%AE%E0%A4%BE%E0%A4%A4%E0%A4%BE+%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%A8&location=%E0%A4%A8%E0%A4%BF%E0%A4%9C+%E0%A4%A8%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%B8%2C+%E0%A4%87%E0%A4%82%E0%A4%A6%E0%A5%8C%E0%A4%B0" target="_blank" rel="noopener" class="btn-cal" title="Google Calendar में जोड़ें">
+            <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/></svg>
+            <span>कैलेंडर में जोड़ें</span>
+          </a>
+        </article>
+
+        <!-- Event 2: Mandap Pujan & Haldi -->
+        <article class="event-card reveal">
+          <div class="event-photo-wrapper">
+            <img src="assets/event-2.jpg" alt="मंडप पूजन एवं हल्दी" loading="lazy">
+          </div>
+          <div class="event-date-badge">2 दिसंबर 2026<br>(बुधवार)</div>
+          <h3 class="event-title">मंडप पूजन एवं हल्दी</h3>
+          <div class="event-time-badge">
+            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            <span>सुबह 11:00 बजे</span>
+          </div>
+          <div class="event-location-text">निज निवास, इंदौर</div>
+          <div class="event-divider-dash">--</div>
+          <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E0%A4%AE%E0%A4%82%E0%A4%A1%E0%A4%AA+%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%A8+%E0%A4%8F%E0%A4%B5%E0%A4%82+%E0%A4%B9%E0%A4%B2%E0%A5%8D%E0%A4%A6%E0%A5%80+-+%E0%A4%95%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%BE+%26+%E0%A4%B9%E0%A4%BF%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%B6%E0%A5%80&dates=20261202T053000Z/20261202T083000Z&details=%E0%A4%AE%E0%A4%82%E0%A4%A1%E0%A4%AA+%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%A8+%E0%A4%8F%E0%A4%B5%E0%A4%82+%E0%A4%B9%E0%A4%B2%E0%A5%8D%E0%A4%A6%E0%A5%80&location=%E0%A4%A8%E0%A4%BF%E0%A4%9C+%E0%A4%A8%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%B8%2C+%E0%A4%87%E0%A4%82%E0%A4%A6%E0%A5%8C%E0%A4%B0" target="_blank" rel="noopener" class="btn-cal" title="Google Calendar में जोड़ें">
+            <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/></svg>
+            <span>कैलेंडर में जोड़ें</span>
+          </a>
+        </article>
+
+        <!-- Event 3: Mehndi & Sangeet -->
+        <article class="event-card reveal">
+          <div class="event-photo-wrapper">
+            <img src="assets/event-3.jpg" alt="मेहंदी एवं संगीत" loading="lazy">
+          </div>
+          <div class="event-date-badge">2 दिसंबर 2026<br>(बुधवार)</div>
+          <h3 class="event-title">मेहंदी एवं संगीत</h3>
+          <div class="event-time-badge">
+            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            <span>शाम 8:00 बजे</span>
+          </div>
+          <div class="event-location-text">निज निवास, इंदौर</div>
+          <div class="event-divider-dash">--</div>
+          <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E0%A4%AE%E0%A5%87%E0%A4%B9%E0%A4%82%E0%A4%A6%E0%A5%80+%E0%A4%8F%E0%A4%B5%E0%A4%82+%E0%A4%B8%E0%A4%82%E0%A4%97%E0%A5%80%E0%A4%A4+-+%E0%A4%95%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%BE+%26+%E0%A4%B9%E0%A4%BF%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%B6%E0%A5%80&dates=20261202T143000Z/20261202T173000Z&details=%E0%A4%AE%E0%A5%87%E0%A4%B9%E0%A4%82%E0%A4%A6%E0%A5%80+%E0%A4%8F%E0%A4%B5%E0%A4%82+%E0%A4%B8%E0%A4%82%E0%A4%97%E0%A5%80%E0%A4%A4&location=%E0%A4%A8%E0%A4%BF%E0%A4%9C+%E0%A4%A8%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%B8%2C+%E0%A4%87%E0%A4%82%E0%A4%A6%E0%A5%8C%E0%A4%B0" target="_blank" rel="noopener" class="btn-cal" title="Google Calendar में जोड़ें">
+            <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/></svg>
+            <span>कैलेंडर में जोड़ें</span>
+          </a>
+        </article>
+
+        <!-- Event 4: Main Wedding Ceremony -->
+        <article class="event-card reveal">
+          <div class="event-photo-wrapper">
+            <img src="assets/event-4.jpg" alt="विवाह एवं आशीर्वाद समारोह" loading="lazy">
+          </div>
+          <div class="event-date-badge">3 दिसंबर 2026<br>(गुरुवार)</div>
+          <h3 class="event-title">विवाह एवं आशीर्वाद समारोह</h3>
+          <div class="event-time-badge">
+            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            <span>शाम 7:00 बजे से</span>
+          </div>
+          <div class="event-location-text">रुद्राक्ष मैरिज गार्डन, इंदौर</div>
+          <div class="event-divider-dash">--</div>
+          <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%B9+%E0%A4%8F%E0%A4%B5%E0%A4%82+%E0%A4%86%E0%A4%B6%E0%A5%80%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%A6+%E0%A4%B8%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%8B%E0%A4%B9+-+%E0%A4%95%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%BE+%26+%E0%A4%B9%E0%A4%BF%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%B6%E0%A5%80&dates=20261203T133000Z/20261203T193000Z&details=%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%B9+%E0%A4%8F%E0%A4%B5%E0%A4%82+%E0%A4%86%E0%A4%B6%E0%A5%80%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%A6+%E0%A4%B8%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%8B%E0%A4%B9&location=%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%95%E0%A5%8D%E0%A4%B7+%E0%A4%AE%E0%A5%88%E0%A4%B0%E0%A4%BF%E0%A4%9C+%E0%A4%97%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%A1%E0%A4%A8%2C+%E0%A4%87%E0%A4%82%E0%A4%A6%E0%A5%8C%E0%A4%B0" target="_blank" rel="noopener" class="btn-cal" title="Google Calendar में जोड़ें">
+            <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/></svg>
+            <span>कैलेंडर में जोड़ें</span>
+          </a>
+        </article>
+
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       </div>
     </section>
 
@@ -2281,8 +2646,13 @@
             </div>
 
             <ul class="family-members-list">
+<<<<<<< HEAD
               <li>श्रीमती केसरा जायसवाल &nbsp;—&nbsp; श्री लक्ष्मण प्रसाद जायसवाल</li>
               <li>श्रीमती सुनीता जायसवाल &nbsp;—&nbsp; श्री सीताराम जायसवाल</li>
+=======
+              <li>श्रीमती सीमा जायसवाल &nbsp;—&nbsp; श्री किसारी जायसवाल</li>
+              <li>श्रीमती दिव्या जायसवाल &nbsp;—&nbsp; श्री हंसराज जायसवाल</li>
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
             </ul>
 
             <div class="family-city-tag">📍 नंदा नगर, इंदौर (मध्य प्रदेश)</div>
@@ -2300,11 +2670,19 @@
             </div>
 
             <ul class="family-members-list">
+<<<<<<< HEAD
               <li>श्रीमती लालता जायसवाल &nbsp;—&nbsp; श्री रामआधार जायसवाल</li>
               <li>श्रीमती जयन्ती जायसवाल &nbsp;—&nbsp; श्री अजीत जायसवाल</li>
             </ul>
 
             <div class="family-city-tag">📍 सोना तालाब पंचकोशी रोड, वाराणसी</div>
+=======
+              <li>श्रीमती सुनीता जायसवाल &nbsp;—&nbsp; श्री सीताराम जायसवाल</li>
+              <li>श्रीमती कल्पना जायसवाल &nbsp;—&nbsp; श्री शिवजी जायसवाल</li>
+            </ul>
+
+            <div class="family-city-tag">📍 सोनातालाब, पंचकोशी रोड, वाराणसी</div>
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
           </div>
 
         </div>
@@ -2346,6 +2724,15 @@
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
             <span>कॉल: 9165936000</span>
           </a>
+<<<<<<< HEAD
+=======
+
+          <!-- WhatsApp Share Button -->
+          <a href="https://api.whatsapp.com/send?text=%F0%9F%8C%B8%20%E0%A4%B6%E0%A5%81%E0%A4%AD%20%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%B9%20%E0%A4%A8%E0%A4%BF%E0%A4%AE%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%A3%20%F0%9F%8C%B8%0A%0A%E0%A4%95%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%BE%20%E2%9D%A4%EF%B8%8F%20%E0%A4%B9%E0%A4%BF%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%B6%E0%A5%80%0A%E0%A4%A4%E0%A4%BE%E0%A4%B0%E0%A5%80%E0%A4%96%3A%203%20%E0%A4%A6%E0%A4%BF%E0%A4%B8%E0%A4%82%E0%A4%AC%E0%A4%B0%202026%0A%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%BE%E0%A4%A8%3A%20%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%95%E0%A5%8D%E0%A4%B7%20%E0%A4%AE%E0%A5%88%E0%A4%B0%E0%A4%BF%E0%A4%9C%20%E0%A4%97%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%A1%E0%A4%A8%2C%20%E0%A4%87%E0%A4%82%E0%A4%A6%E0%A5%8C%E0%A4%B0%0A%0A%E0%A4%B8%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%B0%20%E0%A4%B8%E0%A4%BE%E0%A4%A6%E0%A4%B0%20%E0%A4%86%E0%A4%AE%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%BF%E0%A4%A4%20%E0%A4%B9%E0%A5%88%E0%A4%82%E0%A5%A4" target="_blank" rel="noopener" class="btn-contact btn-whatsapp-share">
+            <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.5c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.78.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/></svg>
+            <span>WhatsApp पर शेयर करें</span>
+          </a>
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
         </div>
       </div>
     </section>
@@ -2369,6 +2756,13 @@
       <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
       <span>विवाह स्थल</span>
     </a>
+<<<<<<< HEAD
+=======
+    <a href="https://api.whatsapp.com/send?text=%F0%9F%8C%B8%20%E0%A4%B6%E0%A5%81%E0%A4%AD%20%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%B9%20%E0%A4%A8%E0%A4%BF%E0%A4%AE%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%A3%20%F0%9F%8C%B8%0A%0A%E0%A4%95%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%BE%20%E2%9D%A4%EF%B8%8F%20%E0%A4%B9%E0%A4%BF%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%B6%E0%A5%80%0A%E0%A4%A4%E0%A4%BE%E0%A4%B0%E0%A5%80%E0%A4%96%3A%203%20%E0%A4%A6%E0%A4%BF%E0%A4%B8%E0%A4%82%E0%A4%AC%E0%A4%B0%202026%0A%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%BE%E0%A4%A8%3A%20%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%95%E0%A5%8D%E0%A4%B7%20%E0%A4%AE%E0%A5%88%E0%A4%B0%E0%A4%BF%E0%A4%9C%20%E0%A4%97%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%A1%E0%A4%A8%2C%20%E0%A4%87%E0%A4%82%E0%A4%A6%E0%A5%8C%E0%A4%B0%0A%0A%E0%A4%B8%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%B0%20%E0%A4%B8%E0%A4%BE%E0%A4%A6%E0%A4%B0%20%E0%A4%86%E0%A4%AE%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%BF%E0%A4%A4%20%E0%A4%B9%E0%A5%88%E0%A4%82%E0%A5%A4" target="_blank" rel="noopener" class="dock-btn">
+      <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.5c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.78.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/></svg>
+      <span>शेयर करें</span>
+    </a>
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
     <a href="tel:9165836000" class="dock-btn">
       <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
       <span>कॉल</span>
@@ -2423,6 +2817,7 @@
       drawerOverlay.addEventListener('click', closeDrawer);
 
       mobileDrawer.querySelectorAll('.drawer-link').forEach(link => {
+<<<<<<< HEAD
         link.addEventListener('click', (e) => {
           const href = link.getAttribute('href');
           closeDrawer();
@@ -2458,6 +2853,9 @@
             target.scrollIntoView({ behavior: 'smooth' });
           }
         });
+=======
+        link.addEventListener('click', closeDrawer);
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
       });
 
       /* --- 3. Active Nav Link on Scroll --- */
@@ -2661,6 +3059,7 @@
         animatePetals();
       }
 
+<<<<<<< HEAD
       /* --- 8. Wedding Music Player (Playing User Uploaded MP3) --- */
       let isPlaying = false;
       const START_TIME = 36; // Timestamp 00:36
@@ -2769,10 +3168,93 @@
         openInviteCta.addEventListener('click', () => {
           if (weddingAudio && weddingAudio.paused) {
             playMusic();
+=======
+      /* --- 8. Auspicious Indian Wedding Shehnai/Flute Audio Synthesizer --- */
+      let audioCtx = null;
+      let isPlaying = false;
+      let musicInterval = null;
+      const musicBtn = document.getElementById('musicToggleBtn');
+      const musicIcon = document.getElementById('musicIcon');
+
+      // Authentic Raag Bilawal / Auspicious Wedding celebratory swaras (frequencies in Hz)
+      const swaras = [
+        261.63, // Sa
+        293.66, // Re
+        329.63, // Ga
+        349.23, // Ma
+        392.00, // Pa
+        440.00, // Dha
+        493.88, // Ni
+        523.25  // Sa'
+      ];
+
+      // Melodic motif resembling auspicious wedding shehnai phrases
+      const ragaMotif = [0, 2, 4, 3, 2, 4, 7, 6, 4, 2, 0];
+
+      const playShehnaiNote = (freq, duration = 0.6) => {
+        if (!audioCtx) return;
+        const now = audioCtx.currentTime;
+
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+
+        // Warm flute/shehnai harmonic timbre
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(freq, now);
+
+        // Gentle envelope: soft attack, sustained body, smooth decay
+        gain.gain.setValueAtTime(0.001, now);
+        gain.gain.linearRampToValueAtTime(0.12, now + 0.08);
+        gain.gain.exponentialRampToValueAtTime(0.0001, now + duration);
+
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+
+        osc.start(now);
+        osc.stop(now + duration + 0.1);
+      };
+
+      const startMusic = () => {
+        if (!audioCtx) {
+          audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        }
+        if (audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
+
+        isPlaying = true;
+        musicBtn.classList.add('playing');
+        musicIcon.textContent = '🔊';
+        showToast('शुभ मंगल संगीत प्रारंभ');
+
+        let noteIdx = 0;
+        musicInterval = setInterval(() => {
+          const swaraIdx = ragaMotif[noteIdx % ragaMotif.length];
+          const freq = swaras[swaraIdx];
+          playShehnaiNote(freq, 0.7);
+          noteIdx++;
+        }, 750);
+      };
+
+      const stopMusic = () => {
+        isPlaying = false;
+        clearInterval(musicInterval);
+        musicBtn.classList.remove('playing');
+        musicIcon.textContent = '🎵';
+      };
+
+      if (musicBtn) {
+        musicBtn.addEventListener('click', () => {
+          if (!isPlaying) {
+            startMusic();
+          } else {
+            stopMusic();
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
           }
         });
       }
 
+<<<<<<< HEAD
       if (weddingAudio) {
         weddingAudio.addEventListener('play', () => updateMusicUI(true));
         weddingAudio.addEventListener('pause', () => updateMusicUI(false));
@@ -2829,6 +3311,8 @@
       }
       window.addEventListener('load', tryAutoPlay);
 
+=======
+>>>>>>> 3693c7f64897b79fecee6f08b37d68fb06c5b3dd
     })();
   </script>
 </body>
