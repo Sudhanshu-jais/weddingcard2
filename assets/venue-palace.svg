@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f2c6a0"/><stop offset=".55" stop-color="#ffe4bf"/><stop offset="1" stop-color="#8c5c4f"/></linearGradient><linearGradient id="p" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffe2b1"/><stop offset="1" stop-color="#95654d"/></linearGradient></defs>
+<rect width="1600" height="700" fill="url(#s)"/><circle cx="800" cy="240" r="95" fill="#fff2cd" opacity=".9"/><path d="M0 500Q300 460 520 505T1000 490T1600 485V700H0Z" fill="#6e4a49"/>
+<g fill="url(#p)" stroke="#875847" stroke-width="4"><path d="M0 700V410h90v-65h50v-45h45v45h50v65h55v-95h60v-70h45v-45h55v45h45v70h55v385Z"/><path d="M1080 700V430h65v-75h50v-45h45v45h50v75h55v-110h60v-65h45v-45h55v45h45v65h45v110h55v270Z"/></g>
+<g fill="none" stroke="#67443c" stroke-width="6"><path d="M90 410q25-90 50 0M300 410q25-90 50 0M420 345q25-100 50 0M1145 430q25-90 50 0M1320 355q25-100 50 0M1450 355q25-100 50 0"/></g>
+<g stroke="#ffe4b4" stroke-width="4" opacity=".5"><path d="M0 550h1600M0 590h1600M0 640h1600"/></g>
+<!-- mandap silhouette -->
+<g stroke="#7c4638" stroke-width="9" fill="none"><path d="M520 700V400H1080V700M490 400L800 275L1110 400M560 400Q800 325 1040 400"/><path d="M545 415H1055" stroke="#f7d59d" stroke-width="4"/></g>
+<g fill="#8c302f"><circle cx="540" cy="395" r="19"/><circle cx="610" cy="365" r="17"/><circle cx="690" cy="335" r="15"/><circle cx="800" cy="300" r="18"/><circle cx="910" cy="335" r="15"/><circle cx="990" cy="365" r="17"/><circle cx="1060" cy="395" r="19"/></g>
+<g fill="#fff1d6"><circle cx="570" cy="390" r="10"/><circle cx="650" cy="350" r="10"/><circle cx="745" cy="320" r="9"/><circle cx="855" cy="320" r="9"/><circle cx="950" cy="350" r="10"/><circle cx="1030" cy="390" r="10"/></g>
+</svg>
