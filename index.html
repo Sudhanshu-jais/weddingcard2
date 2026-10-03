@@ -1851,9 +1851,160 @@
       .hero-container { animation: none !important; }
       .music-toggle-btn.playing { animation: none !important; }
     }
+  
+
+    /* Mobile-only cinematic intro; existing desktop background remains unchanged. */
+    .mobile-hero-video { display: none; }
+    @media (max-width: 768px) {
+      .mobile-hero-video {
+        display: block;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: 0;
+        pointer-events: none;
+      }
+    }
+
+    /* Consistent text alignment across different phone widths and font metrics. */
+    @media (max-width: 768px) {
+      .hero-section {
+        box-sizing: border-box;
+        padding-left: max(14px, env(safe-area-inset-left, 0px));
+        padding-right: max(14px, env(safe-area-inset-right, 0px));
+      }
+      .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 560px;
+        min-width: 0;
+        margin-inline: auto;
+        padding: 8px 0;
+        text-align: center;
+      }
+      .hero-container > * { max-width: 100%; }
+      .shree-ganesh,
+      .shree-ganesh-text,
+      .hero-couplet,
+      .hero-names,
+      .ornamental-divider,
+      .hero-invitation {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .shree-ganesh-text,
+      .hero-couplet,
+      .hero-names,
+      .hero-invitation { width: 100%; }
+      .hero-couplet,
+      .hero-invitation {
+        max-width: 34ch;
+        text-wrap: balance;
+        overflow-wrap: normal;
+      }
+      .hero-names {
+        font-size: clamp(27px, 7.8vw, 42px);
+        line-height: 1.3;
+        letter-spacing: 0;
+        text-wrap: balance;
+        overflow-wrap: normal;
+      }
+      .hero-names .ampersand { margin-left: clamp(2px, 1.2vw, 6px); margin-right: clamp(2px, 1.2vw, 6px); }
+      .ornamental-divider {
+        width: 100%;
+        gap: clamp(6px, 2vw, 14px);
+        white-space: normal;
+      }
+      .ornamental-divider::before,
+      .ornamental-divider::after {
+        width: clamp(18px, 7vw, 60px);
+        flex: 0 1 auto;
+      }
+      .btn-pill { align-self: center; max-width: 100%; }
+
+      .countdown-title,
+      .events-main-title,
+      .pre-events-title,
+      .section-title,
+      .venue-name,
+      .contact-title,
+      .family-side-title,
+      .main-ceremony-title {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        text-wrap: balance;
+        overflow-wrap: normal;
+      }
+      .main-ceremony-content { min-width: 0; }
+      .main-ceremony-kicker { align-self: center; justify-content: center; text-align: center; }
+      .main-ceremony-date-badge { justify-content: center; }
+      .event-card { min-width: 0; }
+      .event-card-content { min-width: 0; text-align: left; }
+      .event-title,
+      .event-date-badge,
+      .event-time-badge,
+      .event-location-text { max-width: 100%; overflow-wrap: anywhere; }
+      .venue-card-content,
+      .contact-content { min-width: 0; }
+    }
+
+    @media (max-width: 380px) {
+      .hero-section { padding-left: 12px; padding-right: 12px; }
+      .hero-container { padding-left: 0; padding-right: 0; }
+      .hero-names { font-size: clamp(25px, 7.2vw, 30px); }
+      .hero-couplet { font-size: 14px; }
+      .ornamental-divider { font-size: 14px; }
+    }
+
+  
+    /* Wedding invitation tap-to-open intro screen */
+    .invitation-intro-screen {
+      position: fixed; inset: 0; z-index: 99999; display: flex; align-items: center; justify-content: center;
+      padding: max(24px, env(safe-area-inset-top)) 22px max(24px, env(safe-area-inset-bottom));
+      text-align: center; color: #FFF3E0; background: linear-gradient(rgba(32,6,9,.72), rgba(32,6,9,.88)), url('/assets/hero-mobile.jpg') center/cover no-repeat;
+      transition: opacity .65s ease, visibility .65s ease; overflow: auto;
+    }
+    .invitation-intro-screen::before { content: ''; position: absolute; inset: 14px; border: 1px solid rgba(243,222,178,.58); pointer-events: none; }
+    .invitation-intro-screen.is-opening { opacity: 0; visibility: hidden; pointer-events: none; }
+    .invitation-intro-content { position: relative; width: min(100%, 520px); display: flex; flex-direction: column; align-items: center; gap: 15px; }
+    .invitation-intro-ornament { color: #F3DEB2; font-size: 30px; line-height: 1; }
+    .invitation-intro-eyebrow { margin: 0; color: #F3DEB2; font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: .22em; text-transform: uppercase; }
+    .invitation-intro-title { margin: 0; color: #FFF3E0; font-family: 'Noto Serif Devanagari', serif; font-size: clamp(25px, 6vw, 36px); line-height: 1.55; font-weight: 600; text-wrap: balance; }
+    .invitation-intro-names { margin: 0; color: #F3DEB2; font-family: 'Playfair Display', serif; font-size: clamp(21px, 5vw, 28px); line-height: 1.35; }
+    .invitation-intro-rule { width: 84px; height: 1px; background: linear-gradient(90deg, transparent, #F3DEB2, transparent); margin: 2px 0; }
+    .invitation-intro-subtitle { margin: 0; color: rgba(255,243,224,.88); font-family: 'Noto Serif Devanagari', serif; font-size: 14px; line-height: 1.8; }
+    .invitation-open-btn { margin-top: 8px; min-height: 52px; padding: 13px 27px; border: 1px solid #F3DEB2; border-radius: 999px; background: linear-gradient(135deg, #F3DEB2, #C59D5F); color: #351016; font-family: 'Noto Serif Devanagari', serif; font-size: 16px; font-weight: 700; box-shadow: 0 8px 28px rgba(0,0,0,.24); cursor: pointer; touch-action: manipulation; }
+    .invitation-open-btn:active { transform: scale(.98); }
+    .invitation-intro-note { margin: 0; color: rgba(255,243,224,.68); font-size: 11px; line-height: 1.6; }
+    body.invitation-gated { overflow: hidden; }
+    @media (min-width: 769px) { .invitation-intro-screen { background-image: linear-gradient(rgba(32,6,9,.72), rgba(32,6,9,.88)), url('/assets/hero-scenic.jpg'); } }
+    @media (max-width: 360px) { .invitation-intro-screen::before { inset: 10px; } .invitation-intro-content { gap: 11px; } .invitation-intro-title { font-size: 24px; } }
+
   </style>
 </head>
-<body>
+<body class="invitation-gated">
+
+  <div class="invitation-intro-screen" id="invitationIntroScreen" role="dialog" aria-modal="true" aria-labelledby="invitationIntroTitle">
+    <div class="invitation-intro-content">
+      <div class="invitation-intro-ornament" aria-hidden="true">❦</div>
+      <p class="invitation-intro-eyebrow">A Wedding Invitation</p>
+      <h1 class="invitation-intro-title" id="invitationIntroTitle">विवाह एवं आशीर्वाद समारोह</h1>
+      <p class="invitation-intro-names">कृष्णा &amp; हिमांशी</p>
+      <div class="invitation-intro-rule" aria-hidden="true"></div>
+      <p class="invitation-intro-subtitle">आप सादर आमंत्रित हैं<br>हमारे शुभ अवसर का हिस्सा बनने के लिए</p>
+      <button type="button" class="invitation-open-btn" id="invitationOpenBtn">✦ स्पर्श करें और निमंत्रण खोलें ✦</button>
+      <p class="invitation-intro-note">संगीत के साथ निमंत्रण देखने के लिए</p>
+    </div>
+  </div>
+
 
   <!-- Falling Festive Rose Petals Canvas -->
   <canvas id="petals-canvas" aria-hidden="true"></canvas>
@@ -1891,10 +2042,10 @@
     </div>
   </header>
 
-  <!-- Background Wedding Music Audio Element (User Uploaded MP3 - Starts at 00:36) -->
-  <audio id="weddingAudio" src="assets/wedding-music.mp3#t=36" preload="auto" loop playsinline style="display: none;">
-    <source src="assets/wedding-music.mp3#t=36" type="audio/mpeg">
-    <source src="assets/music.mp3#t=36" type="audio/mpeg">
+  <!-- Background Wedding Music Audio Element (starts from the beginning) -->
+  <audio id="weddingAudio" src="assets/wedding-music.mp3" autoplay="autoplay" preload="auto" loop playsinline style="display: none;">
+    <source src="assets/wedding-music.mp3" type="audio/mpeg">
+    <source src="assets/music.mp3" type="audio/mpeg">
   </audio>
 
   <!-- Mobile Navigation Drawer -->
@@ -1927,6 +2078,7 @@
          Hero Section (Scenic Lakeside Palace Mandap)
          --------------------------------------------------------- -->
     <section class="hero-section" id="home">
+      <video class="mobile-hero-video" id="mobileHeroVideo" muted playsinline autoplay preload="none" poster="/assets/hero-mobile.jpg" aria-hidden="true"></video>
       <div class="hero-container">
         
         <!-- Shree Ganesh Invocation Motif -->
@@ -2261,7 +2413,7 @@
     <section class="family-section" id="family">
       <div class="family-container">
         <div class="reveal">
-          <h2 class="section-title">हमारे परिवार</h2>
+          <h2 class="section-title">परिवार</h2>
           <div class="lotus-divider" style="margin-top: 8px; margin-bottom: 18px;" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M12 2C11.5 4 9.5 8 7 10C5 11.5 3 14 3 16.5C3 19 5.5 21 8.5 21C10.5 21 11.5 20 12 19C12.5 20 13.5 21 15.5 21C18.5 21 21 19 21 16.5C21 14 19 11.5 17 10C14.5 8 12.5 4 12 2Z"/></svg>
           </div>
@@ -2271,7 +2423,7 @@
           
           <!-- Krishna Paksh (Groom) -->
           <div class="family-side-card reveal">
-            <h3 class="family-side-title">कृष्णा पक्ष</h3>
+            <h3 class="family-side-title">वर पक्ष</h3>
             
             <div class="family-elders">
               वर: चि. कृष्णा जायसवाल<br>
@@ -2279,8 +2431,8 @@
             </div>
 
             <ul class="family-members-list">
-              <li>श्रीमती केसरा जायसवाल &nbsp;—&nbsp; श्री लक्ष्मण प्रसाद जायसवाल</li>
-              <li>श्रीमती सुनीता जायसवाल &nbsp;—&nbsp; श्री सीताराम जायसवाल</li>
+              <li>सुपोत्र: श्रीमती केसरा जायसवाल &nbsp;—&nbsp; श्री लक्ष्मण प्रसाद जायसवाल</li>
+              <li>सुपुत्र: श्रीमती सुनीता जायसवाल &nbsp;—&nbsp; श्री सीताराम जायसवाल</li>
             </ul>
 
             <div class="family-city-tag">📍 नंदा नगर, इंदौर (मध्य प्रदेश)</div>
@@ -2288,7 +2440,7 @@
 
           <!-- Himanshi Paksh (Bride) -->
           <div class="family-side-card reveal">
-            <h3 class="family-side-title">हिमांशी पक्ष</h3>
+            <h3 class="family-side-title">वधू पक्ष</h3>
             
             <div class="family-elders">
               वधू: सौ. कां. हिमांशी जायसवाल<br>
@@ -2296,8 +2448,8 @@
             </div>
 
             <ul class="family-members-list">
-              <li>श्रीमती लालता जायसवाल &nbsp;—&nbsp; श्री रामआधार जायसवाल</li>
-              <li>श्रीमती जयन्ती जायसवाल &nbsp;—&nbsp; श्री अजीत जायसवाल</li>
+              <li>सुपोत्री: श्रीमती लालता जायसवाल &nbsp;—&nbsp; श्री रामआधार जायसवाल</li>
+              <li>श्सुपुत्री: रीमती जयन्ती जायसवाल &nbsp;—&nbsp; श्री अजीत जायसवाल</li>
             </ul>
 
             <div class="family-city-tag">📍 सोना तालाब पंचकोशी रोड, वाराणसी</div>
@@ -2659,7 +2811,7 @@
 
       /* --- 8. Wedding Music Player (Playing User Uploaded MP3) --- */
       let isPlaying = false;
-      const START_TIME = 36; // Timestamp 00:36
+      const START_TIME = 0; // Start from 00:00
       let hasStartedAtTimestamp = false;
 
       const musicBtn = document.getElementById('musicToggleBtn');
@@ -2759,6 +2911,31 @@
         });
       }
 
+      // Tap-to-open gate: this user gesture reliably starts audio and the mobile intro video.
+      const invitationIntro = document.getElementById('invitationIntroScreen');
+      const invitationOpenBtn = document.getElementById('invitationOpenBtn');
+      if (invitationOpenBtn && invitationIntro) {
+        invitationOpenBtn.addEventListener('click', async () => {
+          // Start sound directly from the visitor's tap (browser autoplay requirement).
+          if (weddingAudio) {
+            try {
+              if (!hasStartedAtTimestamp) { weddingAudio.currentTime = START_TIME; hasStartedAtTimestamp = true; }
+            } catch (e) {}
+            await playMusic();
+          }
+          // Start the existing background intro video on phones only.
+          const introVideo = document.getElementById('mobileHeroVideo');
+          if (introVideo && window.matchMedia('(max-width: 768px)').matches) {
+            if (!introVideo.getAttribute('src')) { introVideo.setAttribute('src', '/assets/wedding-intro.mp4'); introVideo.load(); }
+            introVideo.play().catch(() => {});
+          }
+          invitationIntro.classList.add('is-opening');
+          document.body.classList.remove('invitation-gated');
+          window.setTimeout(() => { invitationIntro.remove(); }, 700);
+          cleanupGestureTriggers();
+        }, { once: true });
+      }
+
       // Also trigger music when guest clicks "✉ निमंत्रण खोलें" on hero section
       const openInviteCta = document.getElementById('openInviteBtn');
       if (openInviteCta) {
@@ -2778,7 +2955,7 @@
         });
       }
 
-      /* Automatic Start When Site Opens (Timestamp 00:36) */
+      /* Automatic Start When Site Opens (Timestamp 00:00) */
       const tryAutoPlay = async () => {
         if (!weddingAudio || isPlaying || !weddingAudio.paused) return;
         try {
@@ -2794,7 +2971,7 @@
           cleanupGestureTriggers();
         } catch (err) {
           // Autoplay with sound restricted by browser policy before first interaction.
-          // Will start automatically at 00:36 upon the user's very first gesture on the page.
+          // Will start automatically from the beginning upon the user's first gesture on the page.
         }
       };
 
@@ -2818,14 +2995,40 @@
       };
 
       addGestureTriggers();
-      if (document.readyState === 'complete' || document.readyState === 'interactive') {
-        tryAutoPlay();
-      } else {
-        document.addEventListener('DOMContentLoaded', tryAutoPlay);
+      // Attempt audible autoplay immediately and again as the page becomes ready.
+      // Browsers may still require a first interaction due to their autoplay policies.
+      tryAutoPlay();
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', tryAutoPlay, { once: true });
       }
-      window.addEventListener('load', tryAutoPlay);
+      window.addEventListener('load', tryAutoPlay, { once: true });
 
     })();
   </script>
+
+  <script>
+    (() => {
+      const video = document.getElementById('mobileHeroVideo');
+      if (!video) return;
+      const mobileQuery = window.matchMedia('(max-width: 768px)');
+      function updateMobileHeroVideo() {
+        if (mobileQuery.matches) {
+          if (!video.getAttribute('src')) {
+            video.setAttribute('src', '/assets/wedding-intro.mp4');
+            video.load();
+          }
+          // Wait for the tap-to-open button before starting the video with the music.
+        } else {
+          video.pause();
+          video.removeAttribute('src');
+          video.load();
+        }
+      }
+      updateMobileHeroVideo();
+      if (mobileQuery.addEventListener) mobileQuery.addEventListener('change', updateMobileHeroVideo);
+      else if (mobileQuery.addListener) mobileQuery.addListener(updateMobileHeroVideo);
+    })();
+  </script>
+
 </body>
 </html>
